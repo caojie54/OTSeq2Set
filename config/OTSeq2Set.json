@@ -38,89 +38,10 @@
             "CLIP":8,
             "finish": false,
             "f1_score_final":0
-        },
-        {
-            "model": "OTSeq2Set_noConv",
-            "loss_func": "DynamicHungarianLossAssignAll",
-            "model_number":2,
-            
-            "valid_split":0,
-            "batch_size":32,
-            
-            "attention": "bahdanau",
-            "cell": "gru",
-            "emb_size": 300,
-            "dl_conv": false,
-            "hidden_size": 512,
-            "bottleneck_size":0,
-            "enc_num_layers": 2,
-            "dec_num_layers": 1,
-            "dropout": 0.2,
-            "src_glove": true,
-            "tgt_embedding": "glove",
-            "shared_vocab": false,
-            "mask": false,
-            "global_emb": false,
-            "tau": 0.1,
-            
-            "learning_rate":0.001,
-            "teacher_forcing_ratio": 0,
-            "ignore_index": false,
-            "empty_weight": 0.2,
-            "assign_all_pre": true,
-            "lambda_embedding": 8,
-            "ipot_E_non_empty":true,
-            "ipot_E_first_n_pre":false,
-            "use_CosineAnnealingLR": true,
-            "max_time_step": 24,
-            "N_EPOCHS":20,
-            "CLIP":8,
-            "finish": false,
-            "f1_score_final":0
         }
     ],
     
     "Wiki31k":[
-        {
-            "model": "OTSeq2Set_noConv",
-            "loss_func": "DynamicHungarianLossAssignAll",
-            "model_number":1,
-            
-            "valid_split":0,
-            "batch_size":32,
-            
-            "attention": "bahdanau",
-            "cell": "gru",
-            "emb_size": 300,
-            "hidden_size": 512,
-            "enc_num_layers": 2,
-            "dec_num_layers": 1,
-            "bottleneck_size":300,
-            "bottleneck_dropout":0,
-            "dropout": 0.2,
-            "dl_conv": false,
-            "src_glove": true,
-            "tgt_embedding": "glove",
-            "shared_vocab": false,
-            "mask": false,
-            "global_emb": false,
-            "tau": 0.1,
-            
-            "learning_rate":0.001,
-            "teacher_forcing_ratio": 0,
-            "ignore_index": false,
-            "empty_weight": 0.2,
-            "assign_all_pre": false,
-            "lambda_embedding": 8,
-            "ipot_E_non_empty":true,
-            "ipot_E_first_n_pre":false,
-            "use_CosineAnnealingLR": true,
-            "max_time_step": 30,
-            "N_EPOCHS":15,
-            "CLIP":8,
-            "finish":false,
-            "f1_score_final":0
-        },
         {
             "model": "OTSeq2Set_Conv",
             "loss_func": "DynamicHungarianLossAssignAll",
@@ -166,45 +87,6 @@
     
     "AmazonCat13k":[
         {
-            "model": "OTSet2Set_noConv",
-            "loss_func": "DynamicHungarianLossAssignAll",
-            "model_number":1,
-            
-            "valid_split":0,
-            "batch_size":64,
-            
-            "attention": "bahdanau",
-            "cell": "gru",
-            "emb_size": 300,
-            "hidden_size": 512,
-            "enc_num_layers": 2,
-            "dec_num_layers": 1,
-            "bottleneck_size":0,
-            "dropout": 0.2,
-            "dl_conv": false,
-            "src_glove": true,
-            "tgt_embedding": "glove",
-            "shared_vocab": false,
-            "mask": false,
-            "global_emb": false,
-            "tau": 0.1,
-            
-            "learning_rate":0.0005,
-            "teacher_forcing_ratio": 0,
-            "ignore_index": false,
-            "empty_weight": 0.2,
-            "assign_all_pre": false,
-            "lambda_embedding":8,
-            "ipot_E_non_empty":true,
-            "ipot_E_first_n_pre":false,
-            "use_CosineAnnealingLR": true,
-            "max_time_step": 57,
-            "N_EPOCHS":5,
-            "CLIP":8,
-            "finish":false,
-            "f1_score_final":0
-        },
-        {
             "model": "OTSet2Set_Conv",
             "loss_func": "DynamicHungarianLossAssignAll",
             "model_number":1,
@@ -240,14 +122,14 @@
             "max_time_step": 57,
             "N_EPOCHS":5,
             "CLIP":8,
-            "finish":false,
+            "finish":true,
             "f1_score_final":0
         }
     ],
     
     "Amazon670k":[
         {
-            "model": "OTSeq2Set_Conv",
+            "model": "OTSeq2Set_noConv",
             "loss_func": "DynamicHungarianLossAssignAll",
             "model_number":1,
             
@@ -263,7 +145,7 @@
             "dec_num_layers": 1,
             "bottleneck_size":512,
             "bottleneck_dropout":0,
-            "dl_conv": true,
+            "dl_conv": false,
             "dropout": 0.2,
             "src_glove": true,
             "tgt_embedding": "",
@@ -277,7 +159,7 @@
             "ignore_index": false,
             "empty_weight": 0.2,
             "assign_all_pre": true,
-            "lambda_embedding": 8,
+            "lambda_embedding": 0,
             "ipot_E_non_empty":true,
             "ipot_E_first_n_pre":false,
             "use_CosineAnnealingLR": true,
