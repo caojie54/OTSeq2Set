@@ -31,7 +31,7 @@ OTSeq2set uses the same dataset with AttentionXML, please download each dataset 
 
 The gensim format GloVe embedding (840B,300d) provided by AttentionXML at [here](https://drive.google.com/file/d/10w_HuLklGc8GA_FtUSdnHT8Yo1mxYziP/view?usp=sharing).
 
-For Wiki10-31K,AmazonCat-13K,Amazon-670K, the label vocabulary is downloaded from [The Extreme Classification Repository](http://manikvarma.org/downloads/XC/XMLRepository.html#provenance)
+For Wiki10-31K,AmazonCat-13K, the label vocabulary is downloaded from [The Extreme Classification Repository](http://manikvarma.org/downloads/XC/XMLRepository.html#provenance)
 
 ### or
 
@@ -67,4 +67,10 @@ Description of configuration:
 * **dl_conv** : use light weight convolution or not
 * **lambda_embedding**: The parameter  **lambda** of semantic optimal transport distance
 * **finish** :  whether the model is trained or not, **needs set to true if you don't want to train this model**
+
+## Train
+
+---
+
+Run **OTSeq2Set.ipynb**
 
