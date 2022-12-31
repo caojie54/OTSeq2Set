@@ -22,20 +22,20 @@ torchtext==0.10.0
 
 
 
-OTSeq2set uses the same dataset with AttentionXML, please download each dataset from the following links.
+OTSeq2set uses the same dataset as AttentionXML, please download each dataset from the following links.
 
 * [EUR-Lex](https://drive.google.com/open?id=1iPGbr5-z2LogtMFG1rwwekV_aTubvAb2)
 * [Wiki10-31K](https://drive.google.com/open?id=1Tv4MHQzDWTUC9hRFihRhG8_jt1h0VhnR)
 * [AmazonCat-13K](https://drive.google.com/open?id=1VwHAbri6y6oh8lkpZ6sSY_b1FRNnCLFL)
 * [Amazon-670K](https://drive.google.com/open?id=1Xd4BPFy1RPmE7MEXMu77E2_xWOhR1pHW)
 
-The gensim format GloVe embedding (840B,300d) provided by AttentionXML at [here](https://drive.google.com/file/d/10w_HuLklGc8GA_FtUSdnHT8Yo1mxYziP/view?usp=sharing).
+The gensim format GloVe embedding (840B,300d) is provided by AttentionXML [here](https://drive.google.com/file/d/10w_HuLklGc8GA_FtUSdnHT8Yo1mxYziP/view?usp=sharing).
 
 For Wiki10-31K,AmazonCat-13K, the label vocabulary is downloaded from [The Extreme Classification Repository](http://manikvarma.org/downloads/XC/XMLRepository.html#provenance)
 
 ### or
 
-We compress four datasets with label vocabulary and Glove embedding at [here](https://drive.google.com/file/d/1CH2C4dFyx6MEhOr5pezDpsRZNqJglPT9/view?usp=sharing).
+We compress four datasets with label vocabulary and Glove embedding [here](https://drive.google.com/file/d/1CH2C4dFyx6MEhOr5pezDpsRZNqJglPT9/view?usp=sharing).
 
 The structure of the dataset should be:
 
@@ -58,7 +58,7 @@ OTSeq2Set
 
 ---
 
-File **config/OTSeq2Set.json** contains the configuration of OTSeq2Set which the results are shown in paper.
+File **config/OTSeq2Set.json** contains the configuration of OTSeq2Set which the results are shown in the paper.
 
 **config/baselines.json** contains the configuration of baseline models.
 
